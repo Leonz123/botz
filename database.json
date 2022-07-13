@@ -1,10 +1,10 @@
 {
   "users": {
-    "6285643354073@s.whatsapp.net": {
+    "6283829386551@s.whatsapp.net": {
       "exp": 51180,
       "limit": 10,
       "lastclaim": 1640607557553,
-      "registered": false,
+      "registered": true,
       "name": "Elyas",
       "age": -1,
       "regTime": -1,
@@ -15,7 +15,7 @@
       "level": 5,
       "role": "Warrior IV",
       "autolevelup": true,
-      "money": 1389,
+      "money": 99999999999999999999999999999999999999999999,
       "healt": 10,
       "potion": 12,
       "sampah": 32,
@@ -24,12 +24,12 @@
       "string": 0,
       "emerald": 0,
       "diamond": 1,
-      "gold": 0,
+      "gold": 9999999999999999999,
       "iron": 0,
       "common": 0,
       "uncommon": 0,
-      "mythic": 1,
-      "legendary": 1,
+      "mythic": 999999999999999999999999999999999999,
+      "legendary": 9999999999999999999999999999999999999,
       "pet": 0,
       "kuda": 0,
       "kudaexp": 0,
