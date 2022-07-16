@@ -273,7 +273,43 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
             }
         }
     }
-}
+}else conn.reply(m.chat, `Uang kamu tidak mencukupi untuk mentransfer Gold sebesar ${count}`.trim(), m)
+
+                break
+
+            case 'tabungan':
+
+                if (global.db.data.users[m.sender].gold >= count * 1) {
+
+                   try {
+
+                       global.db.data.users[m.sender].gold -= count * 1
+
+                       global.db.data.users[who].gold += count * 1
+
+                       conn.reply(m.chat, `Berhasil mentransfer Gold sebesar ${count}`.trim(), m)
+
+                    } catch (e) {
+
+                        global.db.data.users[m.sender]. gold += count * 1
+
+                        m.reply('Gagal Menstransfer')
+
+                        console.log(e)
+
+                        if (DevMode) {
+
+                            for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
+
+                               conn.sendMessage(jid, 'Transfer.js error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*', MessageType.text)
+
+                            }
+
+                        }
+
+                    }
+
+                }
     
 handler.help = ['transfer <Args>']
 handler.tags = ['rpg']
