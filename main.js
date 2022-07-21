@@ -124,10 +124,10 @@ global.reloadHandler = function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '*Welcome beban di @subject*'
-  conn.bye = '*Nice, @user keluar beban berkurang....*'
-  conn.spromote = '╭──֍ 〔 ıll 𝗔𝗗𝗠𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 llı 〕 ֍───\n│╭───────────\n││─⬣ Name : @user\n││─⬣ Desc : Jagain groupnya\n│╰───────────\n╰─────────────────────\n\n📮 Hello | Titip Group nya😉\n📮 Salam dari wa.me/6285828764046'
-  conn.sdemote = '╭──֍ 〔 ıll 𝗨𝗡𝗔𝗗𝗠𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 llı 〕 ֍───\n│╭───────────\n││─⬣ Name : @user\n││─⬣ Desc : Nah kan kurang kerjasama\n│╰───────────\n╰─────────────────────\n\n📮 Hello | Kasian deh😉\n📮 Salam dari wa.me/6285828764046'
+  conn.welcome = '*Welcome @user di @subject,Enjoy yaa maaf nih kalau member pada seleb awoakwok*'
+  conn.bye = '*Yahh:(, @user keluar, member berkurang dehh....*'
+  conn.spromote = '╭──֍ 〔 ıll 𝗔𝗗𝗠𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 llı 〕 ֍───\n│╭───────────\n││─⬣ Name : @user\n││─⬣ Desc : Jagain groupnya\n│╰───────────\n╰─────────────────────\n\n📮 Hello | Titip Group nya😉\n📮 Salam dari wa.me/6283829386551'
+  conn.sdemote = '╭──֍ 〔 ıll 𝗨𝗡𝗔𝗗𝗠𝗜𝗡 𝗚𝗥𝗢𝗨𝗣 llı 〕 ֍───\n│╭───────────\n││─⬣ Name : @user\n││─⬣ Desc : Nah kan kurang kerjasama\n│╰───────────\n╰─────────────────────\n\n📮 Hello | Kasian deh😉\n📮 Salam dari wa.me/6283828386551'
   conn.handler = handler.handler.bind(conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(conn)
   conn.onDelete = handler.delete.bind(conn)
